@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Mohit Lovanshi - Developer Portfolio & Resume</title>
+  <meta name="title" content="Mohit Lovanshi - Developer Portfolio & Resume" />
+  <meta name="description" content="Portfolio website of Mohit Lovanshi, CSE student, Full-Stack Developer, and Frontend Intern showcasing real academic and web projects with dark mode, localStorage responses, and admin portal." />
+  <meta name="author" content="Mohit Lovanshi" />
+  <meta name="keywords" content="Mohit Lovanshi, Portfolio, Resume, Full-Stack Developer, Frontend Intern, CSE Student, Indore, HTML5, CSS3, JavaScript, React, Node.js" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohit Lovanshi - Developer Portfolio & Resume" />
+  <meta property="og:description" content="Portfolio website of Mohit Lovanshi, CSE student, Full-Stack Developer, and Frontend Intern showcasing real academic and web projects." />
+  <meta property="og:url" content="https://github.com/MohitLovanshi372" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohit Lovanshi - Developer Portfolio & Resume" />
+  <meta name="twitter:description" content="Portfolio website of Mohit Lovanshi, CSE student, Full-Stack Developer, and Frontend Intern showcasing real academic and web projects." />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e11d62'/><text x='50%' y='65%' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>ML</text></svg>" />
+
+  <!-- External Stylesheet (Vanilla CSS3) -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION BAR
+       ====================================================================== -->
+  <header class="header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Mohit Lovanshi Home">
+        <span class="logo-badge">&lt;ML/&gt;</span>
+        <div class="brand-text">
+          <span class="brand-name">Mohit Lovanshi</span>
+          <span class="brand-role">developer </span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation Links (All 8 required sections + Admin) -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#admin" class="nav-link" style="color: var(--accent-primary); font-weight: 600;">Admin</a>
+      </nav>
+
+      <!-- Action Items: Theme Toggle & Admin Shortcut -->
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Switcher -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Admin Portal Nav Link -->
+        <a href="#admin" id="adminNavBtn" class="admin-nav-btn" title="View Admin Responses Portal">
+          <span class="admin-status-dot"></span>
+          <span>Admin</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="navHamburger" class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT CONTAINER
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ------------------------------------------------------------------
+         SECTION 1: HOME (HERO)
+         ------------------------------------------------------------------ -->
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-greeting">
+            <span class="greeting-dot"></span>
+            <span>Web Development Intern @ InternWave (Current &bull; Remote)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Mohit Lovanshi</span>
+          </h1>
+
+          <div class="hero-typing" aria-live="polite">
+            <span>Specializing as </span>
+            <strong id="typingRoleText" class="gradient-text">Full-Stack Developer</strong>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate Full-Stack Developer &amp; AI Enthusiast pursuing B.Tech in Computer Science 
+            Engineering at Chameli Devi Group of Institutions, Indore. Dedicated to building modern, 
+            intelligent, and practical web applications that solve real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              Explore Projects
+            </a>
+            <a href="#resume" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              View Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com/MohitLovanshi372" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mohit-lovanshi-8269mo90092/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="mailto:mohitlovanshi92@gmail.com" class="social-link" title="Send Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Code Visualizer Card -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="code-card-header">
+              <div class="card-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="card-filename">mohit_lovanshi.js</span>
+            </div>
+            <pre class="code-card-body"><code><span class="code-comment">// Mohit Lovanshi - Developer Profile</span>
+<span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Mohit Lovanshi"</span>,
+  <span class="code-prop">degree</span>: <span class="code-string">"B.Tech Computer Science Engineering"</span>,
+  <span class="code-prop">institution</span>: <span class="code-string">"Chameli Devi Group of Institutions, Indore"</span>,
+  <span class="code-prop">internship</span>: <span class="code-string">"Web Development Intern @ InternWave (Remote)"</span>,
+  <span class="code-prop">techStack</span>: [<span class="code-string">"React.js"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Express"</span>, <span class="code-string">"MongoDB"</span>, <span class="code-string">"MySQL"</span>, <span class="code-string">"JavaScript"</span>],
+  <span class="code-prop">languages</span>: [<span class="code-string">"C"</span>, <span class="code-string">"C++"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"JavaScript"</span>],
+  <span class="code-prop">location</span>: <span class="code-string">"Indore, Madhya Pradesh"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Open to Work &amp; Collaborations"</span>
+};</code></pre>
+          </div>
+
+          <div class="floating-badge">
+            <div class="floating-badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="floating-badge-text">
+              <h4>Full-Stack &amp; AI Enthusiast</h4>
+              <p>2+ Projects &bull; InternWave Intern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 2: ABOUT ME
+         ------------------------------------------------------------------ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Ideas Into Digital Products</h2>
+          <p class="section-subtitle">
+            Passionate about modern web engineering, clean design, and AI-powered solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Hi, I'm Mohit Lovanshi 👋</h3>
+            <p>
+              I'm a passionate <strong>Full-Stack Developer &amp; AI Enthusiast</strong> who loves building modern, 
+              intelligent, and user-focused web applications. I enjoy turning ideas into real-world digital products 
+              using technologies like <strong>HTML, CSS, JavaScript, React, Node.js, MongoDB, and AI tools</strong>.
+            </p>
+            <p>
+              I’m particularly interested in <strong>AI-powered applications, automation, and innovative web solutions</strong> that 
+              solve practical problems. I continuously learn new technologies and improve my development skills by building 
+              real projects. My goal is to become a skilled Full-Stack &amp; AI Developer and create technology that makes people's 
+              lives simpler and smarter.
+            </p>
+
+            <div class="about-details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location:</span>
+                <span class="detail-value">Indore, Madhya Pradesh</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Degree:</span>
+                <span class="detail-value">B.Tech CSE (2024 - 2028)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">College:</span>
+                <span class="detail-value">Chameli Devi Group of Institutions</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Internship:</span>
+                <span class="detail-value">Web Development Intern @ InternWave</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Work Mode:</span>
+                <span class="detail-value">Current &bull; Remote</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Email:</span>
+                <span class="detail-value">mohitlovanshi92@gmail.com</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Availability:</span>
+                <span class="detail-value" style="color: var(--success); font-weight: 700;">Open to Work</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#contact" class="btn btn-primary">Connect With Me</a>
+              <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+            </div>
+          </div>
+
+          <!-- About Right: Profile Card & Real Photo -->
+          <div class="about-photo-card">
+            <img 
+              src="./assets/img/profile/mohit-intern.png" 
+              alt="Mohit Lovanshi - Frontend Developer Intern" 
+              class="about-photo-img"
+              loading="lazy"
+            />
+            <div class="about-photo-overlay">
+              <h3 style="font-size: 1.3rem; font-weight: 700;">Mohit Lovanshi</h3>
+              <p style="font-size: 0.88rem; color: var(--accent-primary); font-weight: 600; margin-bottom: 1rem;">
+                Web Development Intern &bull; InternWave (Remote)
+              </p>
+              <div class="stats-grid">
+                <div class="stat-card" style="padding: 1rem;">
+                  <div class="stat-number" style="font-size: 1.8rem;">3</div>
+                  <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card" style="padding: 1rem;">
+                  <div class="stat-number" style="font-size: 1.8rem;">current</div>
+                  <div class="stat-label">internship</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 3: EDUCATION
+         ------------------------------------------------------------------ -->
+    <section class="section" id="education" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-subtitle">
+            Academic journey focused on computer science, programming fundamentals, and engineering concepts.
+          </p>
+        </div>
+
+        <div class="education-container">
+          <!-- Left: Formal Education Degree -->
+          <div class="education-card">
+            <span class="education-period-badge">2024 - 2028 &bull; Bachelor Degree</span>
+            <h3 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 0.35rem;">
+              Bachelor of Technology (B.Tech)
+            </h3>
+            <div class="education-institution">
+              Computer Science &amp; Engineering &bull; Chameli Devi Group of Institutions, Indore
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              Currently pursuing B.Tech in Computer Science Engineering with a strong focus on programming, 
+              web development, algorithmic problem solving, and practical project building.
+            </p>
+            
+            <div style="border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
+              <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.75rem;">
+                Core Academic Focus:
+              </h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="badge badge-primary">Data Structures &amp; Algorithms</span>
+                <span class="badge badge-primary">Web Technologies</span>
+                <span class="badge badge-primary">Object Oriented Programming</span>
+                <span class="badge badge-primary">C / C++ Fundamentals</span>
+                <span class="badge badge-primary">Database Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Certifications & Specialized Learning -->
+          <div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Certifications &amp; Courses
+            </h3>
+
+            <div class="certifications-container">
+              <!-- Cert 1 -->
+              <div class="cert-card">
+                <div class="cert-card-left">
+                  <div class="cert-icon">&#128220;</div>
+                  <div class="cert-info">
+                    <h4>Web Development &amp; Prompt Engineering Basic</h4>
+                    <span>IBM &bull; 2025</span>
+                  </div>
+                </div>
+                <span class="badge badge-success">Verified</span>
+              </div>
+
+              <!-- Cert 2 -->
+              <div class="cert-card">
+                <div class="cert-card-left">
+                  <div class="cert-icon">&#128187;</div>
+                  <div class="cert-info">
+                    <h4>Web Development Basics</h4>
+                    <span>IBM &bull; 2025</span>
+                  </div>
+                </div>
+                <span class="badge badge-success">Verified</span>
+              </div>
+
+              <!-- Cert 3 -->
+              <div class="cert-card">
+                <div class="cert-card-left">
+                  <div class="cert-icon">&#9989;</div>
+                  <div class="cert-info">
+                    <h4>HTML, CSS &amp; JavaScript</h4>
+                    <span>Coursera &bull; 2025 - 2026</span>
+                  </div>
+                </div>
+                <span class="badge badge-success">Completed</span>
+              </div>
+
+              <!-- Cert 4 -->
+              <div class="cert-card">
+                <div class="cert-card-left">
+                  <div class="cert-icon">&#9874;</div>
+                  <div class="cert-info">
+                    <h4>Programming Fundamentals (C &amp; C++)</h4>
+                    <span>Academic Learning &bull; 2025</span>
+                  </div>
+                </div>
+                <span class="badge badge-primary">Coursework</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 4: SKILLS
+         ------------------------------------------------------------------ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Technologies and tools practiced across frontend development, backend systems, and computer science foundations.
+          </p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-container" role="tablist" aria-label="Skill Categories">
+          <button class="filter-btn active" data-category="all" type="button">All Skills</button>
+          <button class="filter-btn" data-category="frontend" type="button">Frontend &amp; UI</button>
+          <button class="filter-btn" data-category="backend" type="button">Backend &amp; DB</button>
+          <button class="filter-btn" data-category="languages" type="button">Programming</button>
+          <button class="filter-btn" data-category="tools" type="button">Tools &amp; Cloud</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill: React.js -->
+          <article class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">⚛️</div>
+                <div class="skill-info">
+                  <h4>React.js</h4>
+                  <span>Frontend</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Component Architecture &amp; Hooks</span>
+              <span>Practiced</span>
+            </div>
+          </article>
+
+          <!-- Skill: HTML5 & CSS3 -->
+          <article class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">&lt;/&gt;</div>
+                <div class="skill-info">
+                  <h4>HTML5 &amp; CSS3</h4>
+                  <span>Frontend</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Semantic DOM, Flexbox &amp; CSS Grid</span>
+              <span>Advanced</span>
+            </div>
+          </article>
+
+          <!-- Skill: Vanilla JavaScript -->
+          <article class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">JS</div>
+                <div class="skill-info">
+                  <h4>JavaScript (ES6+)</h4>
+                  <span>Frontend &bull; Core</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Async/Await, DOM API, LocalStorage</span>
+              <span>Advanced</span>
+            </div>
+          </article>
+
+          <!-- Skill: Bootstrap 5 -->
+          <article class="skill-card" data-category="frontend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">B5</div>
+                <div class="skill-info">
+                  <h4>Bootstrap 5</h4>
+                  <span>Frontend UI</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Responsive Grid &amp; Components</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+
+          <!-- Skill: Node.js & Express -->
+          <article class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">Node</div>
+                <div class="skill-info">
+                  <h4>Node.js &amp; Express</h4>
+                  <span>Backend</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>REST APIs, Routing, Server Logic</span>
+              <span>Practiced</span>
+            </div>
+          </article>
+
+          <!-- Skill: MySQL & MongoDB -->
+          <article class="skill-card" data-category="backend">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">DB</div>
+                <div class="skill-info">
+                  <h4> MongoDB</h4>
+                  <span>Databases</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>CRUD Operations &amp; Data Models</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+
+          <!-- Skill: Python -->
+          <article class="skill-card" data-category="languages">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">Py</div>
+                <div class="skill-info">
+                  <h4>Python</h4>
+                  <span>Programming</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Scripting, Problem Solving &amp; Logic</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+
+          <!-- Skill: C & C++ -->
+          <article class="skill-card" data-category="languages">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">C++</div>
+                <div class="skill-info">
+                  <h4>C &amp; C++</h4>
+                  <span>Programming Core</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>OOP, Pointers, DSA Fundamentals</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+
+          <!-- Skill: UI/UX & Figma -->
+          <article class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">🎨</div>
+                <div class="skill-info">
+                  <h4>UI/UX &amp; Figma</h4>
+                  <span>Design</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Prototyping, Wireframing &amp; Layouts</span>
+              <span>Practiced</span>
+            </div>
+          </article>
+
+          <!-- Skill: Git & GitHub -->
+          <article class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">Git</div>
+                <div class="skill-info">
+                  <h4>Git &amp; GitHub</h4>
+                  <span>Version Control</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Repositories, Branches, Commits</span>
+              <span>Advanced</span>
+            </div>
+          </article>
+
+          <!-- Skill: Netlify & Render -->
+          <article class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">☁️</div>
+                <div class="skill-info">
+                  <h4>Netlify &amp; Render</h4>
+                  <span>Deployment</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>Cloud Hosting, Live Deployment</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+
+          <!-- Skill: AI Tools & Prompt Engineering -->
+          <article class="skill-card" data-category="tools">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">🤖</div>
+                <div class="skill-info">
+                  <h4>AI Tools &amp; Prompting</h4>
+                  <span>Emerging Tech</span>
+                </div>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-meta">
+              <span>IBM Prompt Engineering Certified</span>
+              <span>Proficient</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 5: PROJECTS
+         ------------------------------------------------------------------ -->
+    <section class="section" id="projects" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Real Academic &amp; Web Projects</h2>
+          <p class="section-subtitle">
+            Actual projects developed for academic hackathons (SIH), practical web development practice, and real estate discovery.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Kisan Procurement Centre -->
+          <article class="project-card">
+            <div class="project-img-box">
+              <img 
+                src="./assets/img/portfolio/kisan-procurement.png" 
+                alt="Kisan Procurement Centre screenshot" 
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge-pill" style="color: var(--success); border-color: var(--success);">SIH 2025</span>
+            </div>
+            <div class="project-body">
+              <div style="font-size: 0.78rem; font-weight: 700; color: var(--success); margin-bottom: 0.35rem; text-transform: uppercase;">
+                AgriTech Platform (SIH) &bull; 2025
+              </div>
+              <h3 class="project-title">Kisan Procurement Centre</h3>
+              <p class="project-description">
+                Digital agricultural procurement platform enabling farmers to schedule MSP crop selling, reserve delivery slots, and access live market prices with role-based dashboard access.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">Render</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://kisan-procurement.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/MohitLovanshi372/kisan-procurement-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Property Finder -->
+          <article class="project-card">
+            <div class="project-img-box">
+              <img 
+                src="./assets/img/portfolio/property-project.png" 
+                alt="Smart Property Finder screenshot" 
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge-pill">Web App 2026</span>
+            </div>
+            <div class="project-body">
+              <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.35rem; text-transform: uppercase;">
+                Real Estate Web App &bull; 2026
+              </div>
+              <h3 class="project-title">Smart Property Finder</h3>
+              <p class="project-description">
+                Intelligent real estate discovery platform featuring algorithmic property match scores, neighborhood evaluation indicators, and side-by-side comparison.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Leaflet API</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Netlify</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://smartpropertylov1c.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/MohitLovanshi372/smart-property-finder-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: AutoHub Car Deal -->
+          <article class="project-card">
+            <div class="project-img-box">
+              <img 
+                src="./assets/img/portfolio/car-autohub.png" 
+                alt="AutoHub Car Deal platform screenshot" 
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge-pill">UI Design &amp; Web</span>
+            </div>
+            <div class="project-body">
+              <div style="font-size: 0.78rem; font-weight: 700; color: var(--accent-primary); margin-bottom: 0.35rem; text-transform: uppercase;">
+                UI Design &amp; Web &bull; 2024-25
+              </div>
+              <h3 class="project-title">AutoHub Car Deal</h3>
+              <p class="project-description">
+                Automobile dealership showcase platform featuring interactive vehicle specifications inspection, 360 showcase elements, and test-drive scheduling.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Netlify</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://car-autohub.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/MohitLovanshi372" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 6: SERVICES
+         ------------------------------------------------------------------ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning &amp; Offerings</span>
+          <h2 class="section-title">Services &amp; What I Practice</h2>
+          <p class="section-subtitle">
+            Student and academic web development focus centered on clean design, responsive layouts, and practical functionality.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-icon-box">&#128187;</div>
+            <h3 class="service-title">Student &amp; Academic Web Development</h3>
+            <p class="service-desc">
+              Building complete, accessible web applications designed for student use, hackathons (SIH), and learning platforms with structured user dashboards and clear role management.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Project-based learning approach
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Semantic HTML &amp; accessible UI
+              </li>
+            </ul>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-icon-box">&#128241;</div>
+            <h3 class="service-title">Responsive Frontend Design</h3>
+            <p class="service-desc">
+              Crafting mobile-first layouts that adapt smoothly across smartphones, tablets, and wide desktop screens using CSS3 Flexbox, CSS Grid, and media queries.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% mobile-friendly design
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cross-browser consistency
+              </li>
+            </ul>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-icon-box">&#9881;</div>
+            <h3 class="service-title">Full-Stack &amp; API Integration</h3>
+            <p class="service-desc">
+              Connecting front-end interfaces to Node.js / Express backends, database layers (MongoDB / MySQL), and third-party RESTful APIs with clean asynchronous data handling.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                REST API client integration
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                LocalStorage &amp; database pipelines
+              </li>
+            </ul>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <div class="service-icon-box">&#127912;</div>
+            <h3 class="service-title">UI/UX Prototyping &amp; Clean Layouts</h3>
+            <p class="service-desc">
+              Translating project requirements into intuitive, aesthetically pleasing user experiences using Figma wireframing, followed by clean and maintainable code implementation.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Figma wireframes to HTML/CSS
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Light &amp; dark theme systems
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 7: RESUME & TIMELINE
+         ------------------------------------------------------------------ -->
+    <section class="section" id="resume" style="background-color: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Resume &amp; Experience</h2>
+          <p class="section-subtitle">
+            Computer Science Engineering student with practical experience gained through internship, academic projects, and self-learning.
+          </p>
+        </div>
+
+        <div class="resume-action-bar">
+          <a href="#contact" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Contact For Opportunities
+          </a>
+          <button class="btn btn-secondary" id="printResumeBtn" type="button" onclick="window.print()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Print / Save Resume
+          </button>
+        </div>
+
+        <div class="resume-layout">
+          <!-- Column 1: Internship & Project Experience -->
+          <div class="resume-column">
+            <h3 class="resume-column-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Internship &amp; Experience
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1: Current Internship - InternWave -->
+              <div class="timeline-item">
+                <span class="timeline-dot" style="background-color: var(--accent-primary); box-shadow: 0 0 0 4px var(--accent-light);"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">Current &bull; Remote</span>
+                  <h4 class="timeline-title">Web Development Intern</h4>
+                  <div class="timeline-subtitle">InternWave</div>
+                  <div style="margin-top: 0.45rem;">
+                    <span class="badge badge-success" style="font-size: 0.75rem;">Current Internship</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Previous Experience - AI Gen Technologies -->
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">Past &bull; Completed</span>
+                  <h4 class="timeline-title">Frontend Developer Intern</h4>
+                  <div class="timeline-subtitle">AI Gen Technologies</div>
+                  <div style="margin-top: 0.35rem; margin-bottom: 0.5rem;">
+                    <span class="badge" style="background-color: var(--bg-tertiary); color: var(--text-secondary); font-size: 0.75rem;">Previous Experience</span>
+                  </div>
+                  <ul class="timeline-desc">
+                    <li>Worked on frontend development, responsive UI implementation, and practical web development tasks.</li>
+                    <li>Utilized HTML, CSS, JavaScript, and React to build clean and accessible component layouts.</li>
+                    <li>Learned modern web workflows, Git team collaboration, and responsive testing.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 3: Practice Projects -->
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025 - 2026</span>
+                  <h4 class="timeline-title">Frontend Practice Projects</h4>
+                  <div class="timeline-subtitle">Mini Projects &bull; Self-Learning</div>
+                  <ul class="timeline-desc">
+                    <li>Created responsive webpages and e-commerce shopping web interfaces while learning core frontend concepts.</li>
+                    <li>Engineered student-focused tools including Kisan Procurement Centre for SIH.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education & Academic History -->
+          <div class="resume-column">
+            <h3 class="resume-column-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Education &amp; Certifications
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1: B.Tech -->
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 - 2028 (Undergraduate)</span>
+                  <h4 class="timeline-title">B.Tech in Computer Science Engineering</h4>
+                  <div class="timeline-subtitle">Chameli Devi Group of Institutions, Indore</div>
+                  <ul class="timeline-desc">
+                    <li>Academic focus on programming, web technologies, database management, and hands-on project building.</li>
+                    <li>Active participant in web development workshops and hackathon initiatives.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2: Certifications -->
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025 &bull; Professional Credentials</span>
+                  <h4 class="timeline-title">IBM &amp; Coursera Certifications</h4>
+                  <div class="timeline-subtitle">Web Development &amp; Prompt Engineering</div>
+                  <ul class="timeline-desc">
+                    <li><strong>IBM:</strong> Web Development &amp; Prompt Engineering Basic (2025).</li>
+                    <li><strong>IBM:</strong> Web Development Basics (2025).</li>
+                    <li><strong>Coursera:</strong> HTML, CSS &amp; JavaScript (2025-26).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 8: CONTACT ME
+         ------------------------------------------------------------------ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Mohit Lovanshi</h2>
+          <p class="section-subtitle">
+            Feel free to reach out for internships, project collaborations, or academic discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Card -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>
+              I am open to web development opportunities, internships, and project discussions.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <h4>Email</h4>
+                  <a href="mailto:mohitlovanshi92@gmail.com">mohitlovanshi92@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <h4>Call / Phone</h4>
+                  <span>Available on request</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <h4>Address / Location</h4>
+                  <span>Indore, Madhya Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="background-color: var(--bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <h4 style="font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--accent-primary);">&#128204; LocalStorage &amp; Admin Feature</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">
+                Submissions via this form are saved instantly in browser <code>localStorage</code> with a timestamp and can be viewed immediately in the <a href="#admin" style="color: var(--accent-primary); font-weight: 600; text-decoration: underline;">Admin Portal</a>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <p>Fill out the form below to get in touch directly.</p>
+
+            <!-- Success / Error Feedback Alert Box -->
+            <div id="formFeedback" class="form-feedback" role="alert" style="display: none;"></div>
+
+            <form id="contactForm" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name <span>*</span></label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. Rahul Sharma"
+                  required
+                  minlength="2"
+                  autocomplete="name"
+                />
+                <div class="form-error" id="nameError">Please enter your name (at least 2 characters).</div>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address <span>*</span></label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="e.g. rahul@example.com"
+                  required
+                  autocomplete="email"
+                />
+                <div class="form-error" id="emailError">Please provide a valid email address.</div>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span>*</span></label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Write your message or project collaboration query here..."
+                  required
+                  minlength="10"
+                  maxlength="500"
+                ></textarea>
+                <div class="form-char-count" id="messageCharCount">0/500</div>
+                <div class="form-error" id="messageError">Please enter a message of at least 10 characters.</div>
+              </div>
+
+              <!-- Submit Button -->
+              <div style="margin-top: 2rem;">
+                <button type="submit" id="submitContactBtn" class="btn btn-primary" style="width: 100%;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 9: ADMIN LOGIN & USER RESPONSES
+         ------------------------------------------------------------------ -->
+    <section class="section admin-section" id="admin">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Internship Evaluation Feature</span>
+          <h2 class="section-title">Admin Portal &amp; Responses</h2>
+          <p class="section-subtitle">
+            Client-side mock database evaluation portal. Log in to review, search, and export contact responses saved in localStorage.
+          </p>
+        </div>
+
+        <div class="admin-wrapper">
+          <!-- 1. ADMIN LOGIN FORM (Visible when logged out) -->
+          <div class="admin-login-box" id="adminLoginBox">
+            <div class="admin-icon-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3>Admin Authentication</h3>
+            <p>Log in to view client inquiries stored in the browser mock database.</p>
+
+            <div class="demo-credentials-callout">
+              <div><strong>Internship Demo Credentials:</strong></div>
+              <div>Username: <code>admin</code></div>
+              <div>Password: <code>password123</code></div>
+            </div>
+
+            <div id="adminLoginError" class="form-feedback is-error" style="display: none; margin-bottom: 1.25rem;">
+              Invalid username or password. Check demo credentials above.
+            </div>
+
+            <form id="adminLoginForm">
+              <div class="form-group" style="text-align: left;">
+                <label for="adminUsername" class="form-label">Username</label>
+                <input
+                  type="text"
+                  id="adminUsername"
+                  class="form-input"
+                  placeholder="Enter username (admin)"
+                  required
+                  value="admin"
+                />
+              </div>
+
+              <div class="form-group" style="text-align: left;">
+                <label for="adminPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="adminPassword"
+                  class="form-input"
+                  placeholder="Enter password (password123)"
+                  required
+                  value="password123"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                  <polyline points="10 17 15 12 10 7"></polyline>
+                  <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+                Log In as Admin
+              </button>
+            </form>
+          </div>
+
+          <!-- 2. ADMIN DASHBOARD & RESPONSES VIEWER (Visible when logged in) -->
+          <div class="admin-dashboard" id="adminDashboard">
+            <!-- Dashboard Top Header Bar -->
+            <div class="dashboard-header">
+              <div class="dashboard-title-group">
+                <h3>
+                  <span>Contact Form Submissions</span>
+                  <span id="responsesCountBadge" class="badge badge-primary">0 Total</span>
+                </h3>
+                <p>Retrieved dynamically from browser <code>localStorage</code> JSON store.</p>
+              </div>
+
+              <div class="dashboard-top-actions">
+                <button type="button" id="populateDemoBtn" class="btn btn-sm btn-secondary" title="Add sample inquiries for review">
+                  + Add Sample Inquiries
+                </button>
+                <button type="button" id="configureSheetsBtn" class="btn btn-sm btn-secondary" title="Configure Google Sheets endpoint">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  Google Sheets Settings
+                </button>
+                <button type="button" id="adminLogoutBtn" class="btn btn-sm btn-danger">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                  </svg>
+                  Log Out
+                </button>
+              </div>
+            </div>
+
+            <!-- Google Sheets Integration Status Banner -->
+            <div class="integration-status-banner" id="integrationStatusBanner">
+              <div class="integration-info">
+                <h4>
+                  <span id="sheetsStatusPill" class="badge badge-warning">LocalStorage Mock Mode</span>
+                  <span>Database Pipeline Status</span>
+                </h4>
+                <p id="sheetsStatusText">Operating on browser localStorage mock database. Connect Google Apps Script anytime.</p>
+              </div>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button type="button" id="exportJsonBtn" class="btn btn-sm btn-secondary" title="Export as JSON file">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Export JSON
+                </button>
+                <button type="button" id="exportCsvBtn" class="btn btn-sm btn-secondary" title="Export as CSV spreadsheet">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Export CSV
+                </button>
+                <button type="button" id="clearAllResponsesBtn" class="btn btn-sm btn-danger" title="Clear all responses">
+                  Clear All
+                </button>
+              </div>
+            </div>
+
+            <!-- Dashboard Filter & View Controls -->
+            <div class="dashboard-controls">
+              <div class="search-box">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                  type="text"
+                  id="searchResponsesInput"
+                  class="search-input"
+                  placeholder="Search by name, email, or message..."
+                />
+              </div>
+
+              <!-- Table vs Cards Toggle -->
+              <div class="view-toggle-group" role="group" aria-label="Responses View Mode">
+                <button type="button" id="viewTableBtn" class="view-toggle-btn active">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-right:4px;">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                  Table View
+                </button>
+                <button type="button" id="viewCardsBtn" class="view-toggle-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-right:4px;">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                  Card View
+                </button>
+              </div>
+            </div>
+
+            <!-- View 1: Responsive Table -->
+            <div class="responses-table-wrapper" id="responsesTableWrapper">
+              <table class="responses-table">
+                <thead>
+                  <tr>
+                    <th style="width: 40px;">#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Timestamp</th>
+                    <th style="text-align: right; width: 60px;">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="responsesTableBody">
+                  <!-- Injected dynamically via script.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- View 2: Responsive Cards -->
+            <div class="responses-cards-container" id="responsesCardsContainer" style="display: none;">
+              <!-- Injected dynamically via script.js -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-responses-state" id="emptyResponsesState" style="display: none;">
+              <div class="empty-state-icon">&#128229;</div>
+              <h4>No Submissions Yet</h4>
+              <p>When visitors submit the Contact form, their responses will automatically appear here.</p>
+              <a href="#contact" class="btn btn-sm btn-primary">Go to Contact Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <span class="logo-badge">&lt;ML/&gt;</span>
+            <span class="brand-name">Mohit Lovanshi</span>
+          </a>
+          <p>
+            Computer Science Engineering Student &bull; Chameli Devi Group of Institutions, Indore &bull; Web Development Intern at InternWave.
+          </p>
+          <span class="badge badge-primary">GitHub Pages Ready &bull; Zero Node Server</span>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#resume" class="footer-link">Resume</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Profiles &amp; Admin</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/MohitLovanshi372" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/mohit-lovanshi-8269mo90092/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Profile</a></li>
+            <li><a href="mailto:mohitlovanshi92@gmail.com" class="footer-link">mohitlovanshi92@gmail.com</a></li>
+            <li><a href="#admin" class="footer-link" style="color: var(--accent-primary); font-weight: 600;">Admin Responses Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Mohit Lovanshi. All Rights Reserved &bull; Chameli Devi Group of Institutions, Indore.
+        </div>
+        <a href="#home" class="back-to-top-btn" title="Back to top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL: GOOGLE APPS SCRIPT CONFIGURATION
+       ====================================================================== -->
+  <div class="modal-backdrop" id="sheetsConfigModal" role="dialog" aria-modal="true" aria-labelledby="sheetsModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="sheetsModalTitle">Google Apps Script Configuration</h3>
+        <button type="button" class="modal-close-btn" id="closeSheetsModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem;">
+          To connect your portfolio's contact form to a live Google Sheet, deploy a simple Google Apps Script Web App (instructions in <code>README.md</code>) and paste the generated URL below:
+        </p>
+
+        <div class="form-group">
+          <label for="sheetsUrlInput" class="form-label">Google Apps Script Web App URL:</label>
+          <input
+            type="url"
+            id="sheetsUrlInput"
+            class="form-input"
+            placeholder="https://script.google.com/macros/s/AKfycb.../exec"
+          />
+          <small style="display: block; margin-top: 0.4rem; color: var(--text-muted);">
+            Leave empty to remain in LocalStorage Mock Database mode.
+          </small>
+        </div>
+
+        <div style="background-color: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.6;">
+          <strong>Quick Apps Script Endpoint Template:</strong>
+          <pre style="font-family: var(--font-mono); margin-top: 0.5rem; font-size: 0.78rem; overflow-x: auto; background: var(--bg-surface); padding: 0.5rem; border-radius: 4px;"><code>function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([data.timestamp, data.name, data.email, data.message]);
+  return ContentService.createTextOutput("Success");
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="resetSheetsUrlBtn" class="btn btn-secondary">Reset to Mock Mode</button>
+        <button type="button" id="saveSheetsUrlBtn" class="btn btn-primary">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript Application -->
+  <script src="./script.js"></script>
+</body>
+</html>
